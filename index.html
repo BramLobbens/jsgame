@@ -7,13 +7,28 @@
 </head>
 <body>
     <div class="wrapper">
-        <canvas id="gameCanvas" class="myCanvas" width=512 height=480></canvas>
-        <div id="audioToggle">
+        <div id="audioToggle" class="audio">
             <p>Music</p>
             <button onclick="document.getElementById('bgMusic').pause()">Pause</button>
             <button onclick="document.getElementById('bgMusic').play()">Resume</button>
         </div>
+        <canvas id="gameCanvas" class="myCanvas" width=512 height=480></canvas>
+        <section class="explanation">
+            <header>
+                <hgroup>
+                    <h1>Ghouls and Goblins</h1>
+                    <h2>A simple JavaScript game.</h2>
+                </hgroup>
+            </header>
+            <div class="tutorial">
+                <p>Press the arrow keys to move around.</p>
+            </div>
+        </section>
+        <footer>
+        <a href="https://github.com/sinaas/jsgame" target="_blank">fork repository</a>
+        </footer>
     </div>
+
     <audio id="bgMusic" src="audio/AerisPianoByTannerHelland.ogg" preload="auto" autoplay loop></audio>
     <script src="js/game.js"></script>
 </body>
