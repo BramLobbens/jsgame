@@ -7,10 +7,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <div id="audioToggle" class="audio">
-            <p>Music</p>
-            <button onclick="document.getElementById('bgMusic').pause()">Pause</button>
-            <button onclick="document.getElementById('bgMusic').play()">Resume</button>
+        <div id="audioToggle" class="audio on">
+            <p>toggle music</p>
         </div>
         <canvas id="gameCanvas" class="myCanvas" width=512 height=480></canvas>
         <section class="explanation">
@@ -30,6 +28,7 @@
     </div>
 
     <audio id="bgMusic" src="audio/AerisPianoByTannerHelland.ogg" preload="auto" autoplay loop></audio>
+    <script src="js/music.js"></script>
     <script src="js/game.js"></script>
 </body>
 </html>

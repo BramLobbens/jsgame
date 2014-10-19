@@ -37,6 +37,10 @@ a {
 	margin: 0 auto;
 }
 
+.myCanvas:hover {
+	cursor: crosshair;
+}
+
 .audio {
 	position: absolute;
 	width: auto;
@@ -46,10 +50,15 @@ a {
 	margin-left: 110px;
 }
 
+.audio:hover {
+	cursor: pointer;
+}
+
 .audio p {
 	color: #ffffff;
-	font-size: 24px;
+	font-size: 0.8em;
 	margin-top: 32px;
+	text-transform: uppercase;
 }
 
 .explanation {
@@ -76,4 +85,8 @@ footer a {
 
 footer a:hover {
 	text-decoration: underline;
+}
+
+.on {
+	background-color: blue;
 }
