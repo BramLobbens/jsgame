@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Game</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <canvas id="gameCanvas" class="myCanvas" width=512 height=480></canvas>
+        <div id="audioToggle">
+            <p>Music</p>
+            <button onclick="document.getElementById('bgMusic').pause()">Pause</button>
+            <button onclick="document.getElementById('bgMusic').play()">Resume</button>
+        </div>
+    </div>
+    <audio id="bgMusic" src="audio/AerisPianoByTannerHelland.ogg" preload="auto" autoplay loop></audio>
+    <script src="js/game.js"></script>
+</body>
+</html>
